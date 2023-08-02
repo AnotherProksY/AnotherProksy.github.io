@@ -11,6 +11,9 @@ body {
 
 .container {
     max-width: 390px;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .item {
@@ -21,17 +24,13 @@ body {
     display: inline-block;
     padding: 10px 20px;
     border: none;
-    background: rgb(248, 168, 24);
+    background-color: var(--tg-theme-button-color);
     border-radius: 10px;
-    color: #fff;
+    color: var(--th-theme-button-text-color);
     text-transform: uppercase;
     font-weight: 700;
 
     transition: background 0.2s linear;
-}
-
-.btn:hover {
-    background: lightgreen;
 }
 
 .usercard {
