@@ -25,5 +25,4 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
 
 let username = document.getElementById("telegram-name");
 
-username.innerText = `${tg.initDataUnsafe.user.first_name}
-${tg.initDataUnsafe.user.last_name}`;
+username.innerText = `${tg.initDataUnsafe.user.username}`;
