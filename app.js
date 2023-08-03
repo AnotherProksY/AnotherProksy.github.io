@@ -26,3 +26,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
 let usernameSpan = document.getElementById("telegram-name");
 
 usernameSpan.innerText = `@${tg.initDataUnsafe.user.username}`;
+
+let testP = document.getElementById("test");
+testP.innerText = `${JSON.stringify(tg)}`;
