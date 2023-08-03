@@ -23,9 +23,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
     tg.sendData(item);
 });
 
-const { first_name, last_name, username } =
-    window.Telegram.WebApp.initDataUnsafe.user;
+const { first_name, last_name, username } = tg.initDataUnsafe.user;
 
-let username = document.getElementById("telegram-name");
+let usernameSpan = document.getElementById("telegram-name");
 
-username.innerText = `@${username}`;
+usernameSpan.innerText = `@${username}`;
