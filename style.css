@@ -9,6 +9,17 @@ body {
     background: var(--tg-theme-bg-color);
 }
 
+.button {
+    background: var(--tg-theme-button-color);
+    color: var(--tg-theme-button-text-color);
+    border: none;
+    font-size: 18px;
+}
+
+.button:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .container {
     max-width: 390px;
     text-align: center;
@@ -24,7 +35,7 @@ body {
     color: var(--tg-theme-button-color);
 }
 
-.btn {
+/*.btn {
     display: inline-block;
     padding: 10px 20px;
     border: none;
@@ -35,7 +46,7 @@ body {
     font-weight: 700;
 
     transition: background 0.2s linear;
-}
+}*/
 
 .usercard {
     text-align: center;
