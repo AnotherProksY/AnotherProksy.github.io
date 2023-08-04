@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
         <title>Document</title>
     </head>
+
     <body>
         <div class="container">
-            <div class="item">
+            <div class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
                 <h1>
                     Привет,
                     <span class="telegram-name" id="telegram-name"></span> 👋
                 </h1>
                 <p>
-                    Мы поможем тебе подключить твой личный <b>VPN</b> без
-                    рекламы и на огромных скоростях всего за пару кликов!
+                    Мы поможем тебе подключить твой личный <strong>VPN</strong> без рекламы и на огромных скоростях всего за пару кликов!
                 </p>
             </div>
-            <button class="button" id="install">Установить</button>
+        </div>
+        <div class="button-bottom fixed-bottom text-center">
+            <button class="btn btn-primary button" id="install">Установить</button>
         </div>
         <script src="https://telegram.org/js/telegram-web-app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
         <script src="app.js"></script>
     </body>
+
 </html>
