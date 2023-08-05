@@ -1,5 +1,4 @@
 let tg = window.Telegram.WebApp;
-tg.expand();
 
 const { first_name, last_name, username } = tg.initDataUnsafe.user;
 
