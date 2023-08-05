@@ -19,3 +19,15 @@ body {
 .telegram-name {
     color: var(--tg-theme-button-color);
 }
+
+/* .container {
+    border: 1px solid black;
+}
+
+.button-bottom {
+    border: 1px solid blue;
+}
+
+.d-flex {
+    border: 1px solid red;
+} */
