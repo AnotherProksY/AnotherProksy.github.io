@@ -7,6 +7,7 @@ const colorScheme = tg.colorScheme;
 let usernameSpan = document.getElementById("telegram-name");
 if (usernameSpan) usernameSpan.innerText = `@${username}`;
 
+
 var appleLink = "";
 if (userPlatform == "macos") {
     appleLink = "https://apps.apple.com/ru/app/outline-secure-internet-access/id1356178125";
@@ -18,6 +19,7 @@ if (userPlatform == "macos") {
 let appleLinkButton = document.getElementById("apple-link");
 if (appleLinkButton) appleLinkButton.href = appleLink;
 
+
 var buttonLoadColor = "";
 if (colorScheme == "light") {
     buttonLoadColor = "#E7F1FE";
@@ -27,4 +29,8 @@ if (colorScheme == "light") {
 
 // Set color for app load button
 let buttonLoad = document.getElementsByClassName("button-load");
-if (buttonLoad) buttonLoad.style.backgroundColor = buttonLoadColor;
+if (buttonLoad) {
+    for (i in buttonLoad) {
+        buttonLoad[i].style.backgroundColor = buttonLoadColor;
+    }
+}
