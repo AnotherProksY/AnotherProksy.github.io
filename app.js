@@ -2,7 +2,6 @@ let tg = window.Telegram.WebApp;
 
 const { first_name, last_name, username } = tg.initDataUnsafe.user;
 const userPlatform = tg.platform;
-const colorScheme = tg.colorScheme;
 
 let usernameSpan = document.getElementById("telegram-name");
 if (usernameSpan) usernameSpan.innerText = `@${username}`;
@@ -23,7 +22,7 @@ if (appleLinkButton) appleLinkButton.href = appleLink;
 // Set color for app load button
 tg.onEvent('themeChanged', () => {
     var buttonLoadColor = "";
-    if (colorScheme == "light") {
+    if (tg.colorScheme == "light") {
         buttonLoadColor = "#E7F1FE";
     } else {
         buttonLoadColor = "#19191A";
