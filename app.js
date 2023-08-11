@@ -19,8 +19,8 @@ let appleLinkButton = document.getElementById("apple-link");
 if (appleLinkButton) appleLinkButton.href = appleLink;
 
 
-// Set color for app load button
-tg.onEvent('themeChanged', () => {
+// Set default colorTheme values on initial page load
+function loadColorThemeValues() {
     var buttonLoadColor = "";
     if (tg.colorScheme == "light") {
         buttonLoadColor = "#E7F1FE";
@@ -34,4 +34,10 @@ tg.onEvent('themeChanged', () => {
             buttonLoad[i].style.backgroundColor = buttonLoadColor;
         }
     }
+}
+loadColorThemeValues();
+
+// Set color for app load button
+tg.onEvent('themeChanged', () => {
+    loadColorThemeValues();
 });
