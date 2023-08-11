@@ -4,7 +4,7 @@ const { first_name, last_name, username } = tg.initDataUnsafe.user;
 const userPlatform = tg.platform;
 
 let usernameSpan = document.getElementById("telegram-name");
-usernameSpan.innerText = `@${username}`;
+if (usernameSpan) usernameSpan.innerText = `@${username}`;
 
 var appleLink = "";
 if (userPlatform == "macos") {
@@ -14,4 +14,5 @@ if (userPlatform == "macos") {
 }
 
 // Set Apple download link
-document.getElementById("apple-link").href = appleLink
+let appleLinkButton = document.getElementById("apple-link");
+if (appleLinkButton) appleLinkButton.href = appleLink;
