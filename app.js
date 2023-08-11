@@ -24,7 +24,7 @@ var buttonLoadColor = "";
 if (colorScheme == "light") {
     buttonLoadColor = "#E7F1FE";
 } else {
-    buttonLoadColor = "#1C1C1D";
+    buttonLoadColor = "#19191A";
 }
 
 // Set color for app load button
