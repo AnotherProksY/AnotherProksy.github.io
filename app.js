@@ -20,17 +20,19 @@ let appleLinkButton = document.getElementById("apple-link");
 if (appleLinkButton) appleLinkButton.href = appleLink;
 
 
-var buttonLoadColor = "";
-if (colorScheme == "light") {
-    buttonLoadColor = "#E7F1FE";
-} else {
-    buttonLoadColor = "#19191A";
-}
-
 // Set color for app load button
-let buttonLoad = document.getElementsByClassName("button-load");
-if (buttonLoad) {
-    for (i in buttonLoad) {
-        buttonLoad[i].style.backgroundColor = buttonLoadColor;
+tg.onEvent('themeChanged', () => {
+    var buttonLoadColor = "";
+    if (colorScheme == "light") {
+        buttonLoadColor = "#E7F1FE";
+    } else {
+        buttonLoadColor = "#19191A";
     }
-}
+
+    let buttonLoad = document.getElementsByClassName("button-load");
+    if (buttonLoad) {
+        for (i in buttonLoad) {
+            buttonLoad[i].style.backgroundColor = buttonLoadColor;
+        }
+    }
+});
