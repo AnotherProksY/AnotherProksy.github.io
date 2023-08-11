@@ -30,7 +30,7 @@ function loadColorThemeValues() {
 
     let buttonLoad = document.getElementsByClassName("button-load");
     if (buttonLoad) {
-        for (i in buttonLoad) {
+        for (i in buttonLoad.length) {
             buttonLoad[i].style.backgroundColor = buttonLoadColor;
         }
     }
@@ -38,6 +38,4 @@ function loadColorThemeValues() {
 loadColorThemeValues();
 
 // Set color for app load button
-tg.onEvent('themeChanged', () => {
-    loadColorThemeValues();
-});
+tg.onEvent('themeChanged', loadColorThemeValues());
