@@ -6,9 +6,19 @@ body {
     background: var(--tg-theme-bg-color);
 }
 
+.container {
+    min-height: var(--tg-viewport-height);
+}
+
 .button {
     background: var(--tg-theme-button-color);
     color: var(--tg-theme-button-text-color);
+    border: none;
+}
+
+.button-load {
+    background-color: #E7F1FE;
+    color: var(--tg-theme-button-color);
     border: none;
 }
 
@@ -18,8 +28,4 @@ body {
 
 .telegram-name {
     color: var(--tg-theme-button-color);
-}
-
-.container {
-    min-height: var(--tg-viewport-height);
 }
