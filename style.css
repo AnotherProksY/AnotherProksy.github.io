@@ -15,7 +15,6 @@ body {
 }
 
 .button-load {
-    background-color: #E7F1FE;
     color: var(--tg-theme-button-color);
     border: none;
 }
